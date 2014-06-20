@@ -30,6 +30,7 @@ node* newnode()
     temp->freq = 0;
     temp->heapindex =-1;
     for(int i=0;i<26;i++) temp->next[i]=NULL;
+    return temp;
 }
 minHeap* createHeap(int k)
 {
@@ -77,14 +78,14 @@ void insertInHeap(struct node* root, char key[], struct minHeap* heap)
     //the word is present in the minheap
     if(root->heapindex!=-1)
     {
-        printf("in 1\n");
+        //printf("in 1\n");
         ++(heap->a[root->heapindex].cnt);  //frequencey counter ++ in heap
         minheapify(heap, root->heapindex);
     }
     //word in not present and the heap is full
     else if(root->heapindex==-1 && heap->counter >= heap->capacity && root->freq > heap->a[0].cnt)
     {
-        printf("in 2\n");
+       // printf("in 2\n");
         heap->a[0].cnt = root->freq;
         heap->a[0].root = root;
         heap->a[0].word = new char[strlen(key)+1];
@@ -95,9 +96,9 @@ void insertInHeap(struct node* root, char key[], struct minHeap* heap)
     //word is not present and heap is not full
     else if(root->heapindex==-1 && heap->counter < heap->capacity)
     {
-        printf("in 3\n");
+        //printf("in 3\n");
         int counter = heap->counter;
-        printf("%d %d\n", counter, heap->capacity);
+        //printf("%d %d\n", counter, heap->capacity);
         heap->a[counter].cnt =1;
         heap->a[counter].word = new char[strlen(key)+1];
         strcpy(heap->a[counter].word , key);

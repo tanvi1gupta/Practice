@@ -23,13 +23,50 @@ int precedennce(char op)
     else if(op=='*' || op=='/') return 2;
     return 0;
 }
+int isDigit(char a)
+{
+    if(a>='0' && a<='9') return 1;
+    else return 0;
+}
+void evaluate(char a[])
+{
+    int len = strlen(a);
+    if(len==0) return ;
+    stack<char> s;
+    int k=0;
+    for(int i=0;i<len;i++)
+    {
+        if(isDigit(a[i]))
+        {
+            s.push(a[i]);
+        }
+        else
+        {
+            int o1 = s.top()-'0';
+            s.pop();
+            int o2 = s.top()-'0';
+            s.pop();
+            //printf("%d %d\n",o1,o2);
+            if(a[i]=='+')
+                s.push(o1+o2+'0');
+            else if(a[i]=='-')
+                s.push(o2-o1+'0');
+            else if(a[i]=='*')
+                s.push(o1*o2+'0');
+            else if(a[i]=='/')
+                s.push(o2/o1+'0');
+
+        }
+    }
+    printf("%d\n",s.top()-'0');
+}
 void createPostfix(char a[])
 {
     stack<char> s;
     int len = strlen(a);
     char postfix[len+1];
     int k=0;
-    printf("%s\n",a);
+   // printf("%s\n",a);
     for(int i=0;i<len;i++)
     {
         if(isOp(a[i]))
@@ -78,6 +115,7 @@ void createPostfix(char a[])
     }
     postfix[k]='\0';
     printf("%s\n",postfix);
+    evaluate(postfix);
 }
 
 int main()

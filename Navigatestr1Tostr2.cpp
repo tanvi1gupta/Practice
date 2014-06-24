@@ -5,15 +5,16 @@ using namespace std;
 int mat[26][26]={{0}};
 bool dfs(char a, char b)
 {
+   // printf("%c %c ", a,b);
+    if(mat[a-'a'][b-'a']) return true;
     for(int i=0;i<26;i++)
     {
-
-        if(i+'a'==b && mat[a-'a'][i])
+        if(mat[a-'a'][i])
         {
-            return true;
+         //   printf("%c..\n", i+'a');
+            return dfs(i+'a', b);
         }
-        else if(mat[a-'a'][i])
-            return dfs(a, i+'a');
+
     }
     return false;
 }

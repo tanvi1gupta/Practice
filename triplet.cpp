@@ -18,7 +18,7 @@ int main()
     {
         while(i< n-1 && a[i]<a[i+1]) i++;
 
-        if(i==n)
+        if(i==n-1)
         {
             printf("no triplet\n");
             break;
@@ -39,6 +39,12 @@ int main()
             break;
 
     }
+    if(i1==-1 || i2==-1 || i3==-1)
+        printf("no triplet\n");
+    else
+    {
     printf("Numbers:\t%d %d %d\n",max1, min1, min2);
     printf("Indeces:\t%d %d %d",i1,i2,i3);
+    }
+
 }

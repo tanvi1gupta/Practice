@@ -1,3 +1,5 @@
+//find maximum in the given size of the window
+
 #include<cstdio>
 #include<iostream>
 #include<queue>

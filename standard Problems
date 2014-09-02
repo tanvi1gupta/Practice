@@ -1,0 +1,26 @@
+1. Kadane algorithm-> find the maximum contiguous sum of a given array
+2. Given a matrix sorted row-wise and column-wise, find a number.
+3. Given a sorted rotated array, find a number.
+4. Given a matrix of 0's and 1's, find the rectangle with maximum number of 0's.
+5. Given a histogram find the maximum area rectangle.
+6. Given a stream of characters, output if this stream could be broken into valid set of words.
+  You are provided with a dictionary look up which will output if the given word is a valid work or not.
+7. Given a stream of characters, store all the non repeated characters in the stream and output the first nonn-repeated
+  character so far. 
+  Ex: geeksforgeeks
+  g
+  g->e
+  g
+  g->k
+  g->k->s
+  g->k->s->f
+  g->k->s->f->o
+  g->k->s->f->o->r
+  k->s->f->o->r
+  s->f->o->r
+  f->o->r
+
+
+
+TREES
+1.

@@ -37,8 +37,13 @@ Given a triangle, find the minimum path sum from top to bottom. Each step you ma
 Right view of the tree
 Reverse a Circular LL. ?? if they say yes, then ask, can we actually reverse a  circular LL 
 
-given 2 robots, and 4 methods, GoLeft, GoRight, OnParachute, Stay, the 2 robots are ejected from a plane and land on earth, 
-now you need to write a code which makes the 2 robots meet at a position. 
+Two robots are dropped from an airplane and land on a single line (with discrete positions) using a parachute which is left at 
+the landing point. The robots are both facing north, they are an unknown distance apart, and one has landed directly east of the other.
+The robots are now to be programmed such that they meet each other. They can be instructed to move left or right to a 
+neighboring position and to check whether a parachute is present at the current location.
+If the other robot is met both robots stop there and live happily ever after.
+The parachute check might conditionally execute any number of instructions and any block of instructions may be 
+repeated unconditionally. Write down a program that both robots can follow simultaneously and which garuantees that they meet.
 
 10 steps go left,
 20 go right

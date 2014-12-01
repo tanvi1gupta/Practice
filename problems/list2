@@ -1,0 +1,17 @@
+find the sqaure-root/cube-root of a number
+given an array,find a triplet a[i], a[j], a[k] such that a[i]<a[j]<a[k] && i<j<k [[O(n) space & O(1) space]]
+given a string find the longest palindrome substring
+given a random stream of characters, and a lookup dictionary, find whether the stream can be broken down into valid set of words
+If Q4, then output one valid sentence
+stock problem,..leetcode ...given an array, where a[i] tells you the price of the stock for that day, find the best times to buy and sell the stock
+given a binary tree and a node, find all the nodes at distance k from that node
+design the snake and ladder problem.
+merge k sorted arrays
+given sorted arrays, find the median of the merged arrays, without actually merging the array
+      http://leetcode.com/2011/03/median-of-two-sorted-arrays.html
+histogram problem, given an array, where a[i] depicts the height of a tower, find the maximum rectangle that can be constructed
+      http://www.geeksforgeeks.org/largest-rectangle-under-histogram/ 
+given a matrix made of 0s and 1s, find the area of rectangle with max number of 0s
+      https://github.com/tanvi1gupta/Practice/blob/master/ZeroOnemaxArea.cpp
+determine whether 2 rectangles are overlapping or not
+

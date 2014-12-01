@@ -37,3 +37,12 @@ Given a triangle, find the minimum path sum from top to bottom. Each step you ma
 Right view of the tree
 Reverse a Circular LL. ?? if they say yes, then ask, can we actually reverse a  circular LL 
 
+given 2 robots, and 4 methods, GoLeft, GoRight, OnParachute, Stay, the 2 robots are ejected from a plane and land on earth, 
+now you need to write a code which makes the 2 robots meet at a position. 
+
+10 steps go left,
+20 go right
+30 go left
+40 go right
+if on parachute stay else go left 50
+60 go right 

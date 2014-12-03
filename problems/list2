@@ -51,3 +51,6 @@ repeated unconditionally. Write down a program that both robots can follow simul
 40 go right
 if on parachute stay else go left 50
 60 go right 
+
+
+given an array, find the subarray with maximum product
